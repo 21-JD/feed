@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    .card {
+      border-radius: 1rem;
+      width: 80vw; /* 80% of screen width */
+      max-width: 1100px; /* Prevents it from getting too large */
+      min-height: 60vh; /* Ensures it's tall enough */
+    }
+    .login-image {
+      border-radius: 1rem 0 0 1rem;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; /* Centers form content vertically */
+      text-align: center;
+      height: 100%;
+      padding: 2rem;
+    }
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 2rem; /* Adds spacing below the logo */
+    }
+    .logo-icon {
+      font-size: 4rem; /* Responsive size */
+      color: #ff6219;
+    }
+    .welcome-text {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-top: 0.5rem; /* More space between logo and text */
+    }
+    .form-container {
+      width: 100%;
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .form-outline {
+      width: 100%;
+    }
+    .btn-login {
+      width: 100%; /* Same width as input fields */
+      padding: 0.75rem; /* Match button height with inputs */
+      font-size: 1.2rem; /* Slightly bigger font for better UI */
+    
+    }
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    .card {
+      border-radius: 1rem;
+      width: 80vw; /* 80% of screen width */
+      max-width: 1100px; /* Prevents it from getting too large */
+      min-height: 60vh; /* Ensures it's tall enough */
+      background:rgb(36, 25, 25);
+    }
+    .login-image {
+      border-radius: 1rem 0 0 1rem;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; /* Centers form content vertically */
+      text-align: center;
+      height: 100%;
+      padding: 2rem;
+      background:rgb(189, 185, 185);
+    }
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 2rem; /* Adds spacing below the logo */
+    }
+    .logo-icon {
+      font-size: 4rem; /* Responsive size */
+      color: #ff6219;
+    }
+    .welcome-text {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-top: 0.5rem; /* More space between logo and text */
+    }
+    .form-container {
+      width: 100%;
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .form-outline {
+      width: 100%;
+    }
+    .btn-login {
+      width: 100%; /* Same width as input fields */
+      padding: 0.75rem; /* Match button height with inputs */
+      font-size: 1.2rem; /* Slightly bigger font for better UI */
+    }
+      body {
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+      }
+    
+  </style>
+</head>
+  </style>
+</head>
+<body>
+    
+  <section class="vh-100 d-flex align-items-center justify-content-center">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 d-flex justify-content-center">
+          <div class="card shadow d-flex">
+            <div class="row g-0">
+              
+              <!-- Image: Hides on smaller screens -->
+              <div class="col-md-6 d-none d-md-block">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                  alt="login form" class="login-image" />
+              </div>
+              
+              <div class="col-md-6 d-flex flex-column"> <!-- Form Column -->
+                <div class="card-body">
+                  
+                  <!-- Logo at the top -->
+                  <div class="logo-container">
+                    <i class="fas fa-cubes logo-icon"></i>
+                    <span class="welcome-text">Welcome to X!</span>
+                  </div>
+
+                  <!-- Form centered -->
+                  <div class="form-container">
+                    <form>
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="email">Email address</label>
+                        <input type="email" id="email" class="form-control form-control-lg" required />
+                      </div>
+    
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="password">Password</label>
+                        <input type="password" id="password" class="form-control form-control-lg" required />
+                      </div>
+    
+                      <div class="pt-1 mb-4">
+                        <button class="btn btn-dark btn-lg btn-login" type="submit">Login</button>
+                      </div>
+    
+                    </form>
+                  </div>
+  
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Bootstrap JS (for interactivity, optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
